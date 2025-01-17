@@ -40,6 +40,9 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
+	//주문서비스에서 OkHttp의 MockWeServer에 대한 테스트 의존성 추가 
+//	testImplementation 'com.squareup.okhttp3:okhttp:4.10.0'
+	testImplementation 'com.squareup.okhttp3:mockwebserver:4.10.0'	
 }
 
 tasks.named('test') {

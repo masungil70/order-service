@@ -1,4 +1,4 @@
-package com.kosa.polarbookshop.order_service;
+package com.kosa.polarbookshop.orderservice;
 
 import org.springframework.boot.SpringApplication;
 

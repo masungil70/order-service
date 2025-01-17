@@ -1,4 +1,4 @@
-package com.kosa.polarbookshop.order_service;
+package com.kosa.polarbookshop.orderservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

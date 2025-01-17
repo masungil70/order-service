@@ -1,0 +1,5 @@
+정상 주문 
+http POST :9002/orders isbn=1234567891 quantity=3
+
+책이 없는 주문 
+http POST :9002/orders isbn=1234567831 quantity=3

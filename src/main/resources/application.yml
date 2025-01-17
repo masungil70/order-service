@@ -36,4 +36,4 @@ logging:
 
 #카탈로그 서비스 URL 설정
 polar:
-  catalog-service-url: "http://192.168.1.13:9091"
+  catalog-service-url: "http://172.27.99.163:9091"

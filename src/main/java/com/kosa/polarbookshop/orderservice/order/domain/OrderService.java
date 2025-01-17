@@ -22,6 +22,8 @@ public class OrderService {
     }
 
     public Mono<Order> submitOrder(String isbn, int quantiry) {
+        log.info("submitOrder called...");
+
         return bookClient.getBookByIsbn(isbn) // 카탈로그 서비스를 호출해 책의 주문 가능성을 확인한다
                 .map(book -> buildAcceptedOrder(book, quantiry)) // 책 주문이 가능하면 접수한다
                 .defaultIfEmpty(buildRejectedOrder(isbn, quantiry)) // 책이 카탈로그에 존재하지 않으면 주문을 거부한다

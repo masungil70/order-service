@@ -2,9 +2,9 @@ package com.kosa.polarbookshop.orderservice.book;
 
 import java.io.IOException;
 
-import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -37,7 +37,7 @@ public class BookClientTests {
     }
 
     @Test
-    void 도서가_존재하는_경우_도서_반환_테스트() {
+    public void 도서가_존재하는_경우_도서_반환_테스트() {
         var bookIsbn = "234567890";
 
         // 모의 서버에 의해 반화되는 응답을 정의한다
